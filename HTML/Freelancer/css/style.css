@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+	width:100%;
+	float:left;
+	position:relative;
+	background:#CCC;
+	padding:20px;
+	}
+ *{padding:0px; margin:0; box-sizing:border-box}
+section{
+	width:100%;
+	float:left;
+	position:relative;
+	padding:20px;
+	}
+    
+.container{
+	width:80%;
+	display:block;
+	margin:auto;
+	}
+	
+body{
+	overflow-y: scroll;
+	}
+body::-webkit-scrollbar {
+	background:transparent;
+	width:4px;
+	}
+body::-webkit-scrollbar-track {
+	background:transparent;
+	}
+body::-webkit-scrollbar-thumb {
+	background:rgba(0,0,0,0.5);
+	border-radius: 4px;
+	}
+body::-moz-scrollbar {
+	background:transparent;
+	width:4px;
+	}
+body::-moz-scrollbar-track {
+	background:transparent;
+	}
+body::-moz-scrollbar-thumb {
+	background:rgba(0,0,0,0.5);
+	border-radius: 4px;
+	}
+	
+.row{
+	width:100%;
+	float:left;
+	position:relative;
+	}
+	
+/*single column start*/
+.col-1-s{
+	width:10%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-2-s{
+	width:20%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-3-s{
+	width:30%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-4-s{
+	width:40%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-5-s{
+	width:50%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-6-s{
+	width:60%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-7-s{
+	width:70%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-8-s{
+	width:80%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	}
+.col-9-s{
+	width:90%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-10-s{
+	width:100%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+/*single column end*/
+	
+/*Multiple column*/
+.col-1-m{
+	width:100%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-2-m{
+	width:50%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-3-m{
+	width:33.3333%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-4-m{
+	width:25%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-5-m{
+	width:20%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-6-m{
+	width:16.6666%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-7-m{
+	width:14.2857%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-8-m{
+	width:12.5%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	}
+.col-9-m{
+	width:11.1111%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+.col-10-m{
+	width:10%;
+	float:left;
+	position:relative;
+	border:1px solid red;
+	padding:5px;
+	margin:5px 0;
+	}
+/* Multiple column end*/
+	
+    
+footer{
+	width:100%;
+	float:left;
+	position:relative;
+	background:#CCC;
+	padding:20px;
+	}
