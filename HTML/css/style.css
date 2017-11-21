@@ -164,8 +164,8 @@ body::-moz-scrollbar-thumb {
 	width:25%;
 	float:left;
 	position:relative;
-	padding:5px;
-	margin:5px 0;
+	padding:10px;
+	/* margin:5px 0; */
 	}
 .col-5-m{
 	width:20%;
@@ -794,3 +794,168 @@ header{
 	border: none;
 }
 /* end  Add Item  */
+
+/* start profile */
+
+.profile_cont{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #ffffff;
+	border-radius: 4px 4px 0 0;
+	padding: 60px;
+	display: flex;
+}
+.profile_cont_cont{
+	padding: 30px 20px;
+}
+.profile_cont_cont h1{
+	font-size: 24px;
+	color: #525252;
+	font-weight: 300;
+}
+.profile_cont_cont p{
+	font-size: 12px;
+	color: #4a90e2;
+	font-weight: 300;
+}
+
+
+.tab_cont_area{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #ffffff;
+	border-radius:0 0 4px 4px;
+}
+.tab{
+	width: 100%;
+	height: auto;
+	background: #f3f3f3;
+	float: left;
+	position: relative;
+}
+.tab button{
+	background: none;
+	border: none;
+	border-right: 1px solid #ffffff;
+	padding: 8px 30px;
+	position: relative;
+	float: left;
+}
+.tab .active{
+	background: #4a90e2;
+	color: #ffffff;
+	position: relative;
+	float: left;
+}
+.city{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 30px;
+	position: relative;
+}
+
+.user_form{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 40px 60px;
+	position: relative;
+}
+.user_form hr{
+	border: 1px solid #4a90e2;
+}
+.user_form h2{
+	color: #4a90e2;
+}
+.user_form label{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	font-size: 14px;
+	margin: 26px 0 6px 0;
+	font-weight: 300;
+}
+.user_form input{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	border: none;
+	font-weight: 300;
+	border-bottom: 1px solid #e7e7e7;
+}
+.user_form input:active, input:focus{
+	border-bottom: 1px solid #4a90e2;
+}
+.user_form textarea{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	border: none;
+	font-weight: 300;
+	border-bottom: 1px solid #e7e7e7;
+}
+.user_form button{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	border: none;
+	background: #4a90e2;
+	padding: 6px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+/* end profile */
+/* start Portfolio */
+
+.profile_area{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	background: #e7e7e7;
+	border-radius: 10px;
+}
+.profile_area img{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.portfolio_like{
+	width: auto;
+	height: auto;
+	padding: 10px;
+	float: left;
+	display: inline-flex;
+}
+.portfolio_like button{
+	width: 14px;
+	height: 16px;
+	border: none;
+	cursor: pointer;
+	background: url(../image/like.png) center center no-repeat;
+}
+.portfolio_like span{
+	font-size: 14px;
+	margin: 0 6px;
+	color: #525252;
+}
+.portfolio_rate{
+	width: auto;
+	height: auto;
+	float: right;
+	padding: 10px;
+	color: #525252;
+}
+.portfolio_rate span{
+	font-size: 14px;
+	margin: 0 6px;
+	color: #525252;
+}
