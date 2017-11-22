@@ -843,6 +843,16 @@ header{
 	position: relative;
 	float: left;
 }
+.tab button span{
+	background: #e72121;
+	color: #cccccc;
+	border: none;
+	padding: 0px 5px;
+	position: relative;
+	float: right;
+}
+
+
 .tab .active{
 	background: #4a90e2;
 	color: #ffffff;
@@ -958,4 +968,119 @@ header{
 	font-size: 14px;
 	margin: 0 6px;
 	color: #525252;
+}
+
+/* Order requet */
+.order_item{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #cccccc;
+	padding: 20px 0;
+}
+.order_item_img{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.order_item_img img{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.order_item_cont{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	padding-left: 30px;
+}
+.order_item_cont p{
+	font-size: 14px;
+	color: #525252;
+	font-weight: 300;
+	float: left;
+}
+.order_item_cont table{
+	max-width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	font-weight: 300;
+	font-size: 14px;
+	margin: 10px 0;
+}
+.order_item_cont_profile{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	display: inline-flex;
+	margin-bottom: 10px;
+}
+.order_item_cont_profile h2{
+	font-size: 20px;
+	color: #525252;
+	font-weight: 300;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.order_item_cont_button{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.order_item_cont_button button{
+	background: #4a90e2;
+	color: #ffffff;
+	border: none;
+	padding: 6px 16px;
+	cursor: pointer;
+}
+
+/* Client Feed */
+.client_feed{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.client_feed h2{
+	font-size: 20px;
+	color: #525252;
+	font-weight: 300;
+	display: inline-block;
+}
+.client_feed img{
+	width: auto;
+	height: auto;
+	display: inline-block;
+}
+
+/* Delivery */
+
+.hold_item_cont_button{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.hold_item_cont_button .active{
+	background: #4a90e2;
+	color: #ffffff;
+	border: none;
+	padding: 6px 16px;
+	cursor: pointer;
+	float: left;
+}
+.hold_item_cont_button .delivery{
+	background: #e2e2e2;
+	color: #333333;
+	border: none;
+	padding: 6px 16px;
+	cursor: pointer;
+	float: right;
 }

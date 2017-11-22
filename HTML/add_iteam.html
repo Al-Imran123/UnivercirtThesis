@@ -28,187 +28,185 @@
         </div>
     </header>
     
-    <body>
         <div class="container">
             <div class="body_area">
-                <div class="col-3-s">
-                    <div class="filter_title">
-                        <h3>select catagory</h3>
-                    </div>
-                    <div class="filter_area">
-                        <div class="category_area">
-                            <h3>Graphic Design</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Logo Design</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Banner Design</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Business Design</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Book Design</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="category_area">
-                            <h3>web Design</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>E-Comarch site</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Landing Page </label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Bloag Design</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="category_area">
-                            <h3>Mobile Design</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>social App</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>E-Comarch App</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Creative Design</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="category_area">
-                            <h3>Interior Design</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Home</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>Office</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="category_area">
-                            <h3>3D Design</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="logo"/>
-                                    <label>3D Modeling</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7-s">
-                    <div class="search_area">
-                        <button class="add_items"></button>
-                        <input class="search_text" type="search" placeholder="search Designer">
-                        <input class="search_submit" type="submit" value="">
-                        <span class="saperator"></span>
+                <div class="profile_cont">
+
+                    <a href="#"><img src="image/profile3.png" alt="profile"></a>
+                    <div class="profile_cont_cont">
+                        <h1>Al Imran</h1>
+                        <p>Graphic Designer</p>
                     </div>
 
-                    <div class="iteams">
-                        <div class="iteams_header">
-                            <div class="col-flex profile_icon">
-                                <img src="image/profile2.png" alt="profile">
-                                <h3>Md. Al Imran</h3>
-                            </div>
-                            <div class="col-flex position">
-                                <h4>Graphic Designer</h4>
-                            </div>
-                            <div class="col-flex award">
-                                <img src="image/goald.png" alt="rattings">
-                                <h3>Gold</h3>
-                            </div>
-                            <div class="col-flex view_all">
-                                <input type="checkbox" value="vie_all">
-                                Vie All
-                            </div>
-                        </div>
-                        <div class="iteams_img">
-                            <div style="width: 100%; float: left"><img src="image/img1.png" alt="profile"></div>
+                </div>
+                <div class="tab_cont_area">
+                    <!-- Tab Area -->
+                    <div class="tab">
+                        <button class="tablink active" onclick="openCity(event,'Profile')">Profile</button>
+                        <button class="tablink" onclick="openCity(event,'Portfolio')">Portfolio</button>
+                        <button class="tablink" onclick="openCity(event,'OrderRequest')">Order Request</button>
+                        <button class="tablink " onclick="openCity(event,'Delivery')">Delivery</button>
+                        <button class="tablink" onclick="openCity(event,'Hold')">Hold</button>
+                        <button class="tablink" onclick="openCity(event,'Balance')">Balance</button>
+                    </div>
+                    <!-- start profile -->
+                    <div id="Profile" class="city">
+                        <div class="user_form">
+                            <h2>Profile</h2>
+                            <hr>
+                            <form action="" method="GET">
+                                <label>Name:</label>
+                                <input type="text" placeholder="Name">
+                                <label>Position:</label>
+                                <input type="text" placeholder="Position">
+                                <label>state:</label>
+                                <input type="text" placeholder="state">
+                                <label>Email:</label>
+                                <input type="text" placeholder="Email">
+                                <label>Phone:</label>
+                                <input type="text" placeholder="+88 01700-000000">
+                                <label>short Note:</label>
+                                <textarea placeholder="short note" rows="4"></textarea>
+                                <label style="text-align: right; font-size: 12px; margin:4px 0 20px 0">500 Char</label>
+                                <button>save</button>
+                            </form>
                         </div>
                     </div>
-                    
-                    <div class="iteams">
-                        <div class="iteams_header">
-                            <div class="col-flex profile_icon">
-                                <img src="image/profile2.png" alt="profile">
-                                <h3>Md. Al Imran</h3>
-                            </div>
-                            <div class="col-flex position">
-                                <h4>web Designer</h4>
-                            </div>
-                            <div class="col-flex award">
-                                <img src="image/goald.png" alt="rattings">
-                                <h3>Gold</h3>
-                            </div>
-                            <div class="col-flex view_all">
-                                <input type="checkbox" value="vie_all">
-                                Vie All
+                    <!-- start Portfolio -->
+                    <div id="Portfolio" class="city" style="display:none">
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio1.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="iteams_img">
-                            <img src="image/img2.jpg" alt="profile">
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio2.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio3.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio4.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio5.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio6.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio7.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4-m">
+                            <div class="profile_area">
+                                <img src="image/portfolio8.png" alt="profile">
+                                <div class="portfolio_like">
+                                    <button></button>
+                                    <span>112</span>
+                                </div>
+                                <div class="portfolio_rate">
+                                    <span>$6.00</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <div id="OrderRequest" class="city" style="display:none">
+                        <h2>Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    <div id="Delivery" class="city" style="display:none">
+                        <h2>Delivery</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    <div id="Hold" class="city" style="display:none">
+                        <h2>Hold</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+                    <div id="Balance" class="city" style="display:none">
+                        <h2>Balance</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
+        
                 </div>
             </div>
         </div>
-    </body>
 
-    <div class="add_popup_bg">
-        <div class="add_popup_cont">
-            <h3>Add Item</h3>
-            <div class="col-4-s">
-                <h3>Add Image</h3>
-                <div class="iteams_img_sample">
-                    
-                </div>
-                <div class="add_controler">
-                    <button>Add</button>
-                    <label for="11">Edit</label>
-                    <input id="11" type="file" value="Edit">
-                </div>
-            </div>
-            <div class="col-6-s">
-                <div class="add_form">
-                    <input class="text" type="text" placeholder="User Name">
-                    <select>
-                        <option>Catagory</option>
-                        <option>Graphic Design</option>
-                        <option>web Design</option>
-                        <option>Mobile App Design</option>
-                    </select>
-                    <select>
-                        <option>Catagory</option>
-                        <option>Logo Design</option>
-                        <option>Banner Design</option>
-                        <option>Business Design</option>
-                    </select>
-                    <textarea rows="3"></textarea>
-
-                    <input class="submit" type="submit" value="Register">
-                </div>
-            </div>
-        </div>
-    </div>
-
+        <script>
+            function openCity(evt, cityName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
 </body>
 </html>
