@@ -213,12 +213,13 @@ header{
 	width:100%;
 	float:left;
 	position:relative;
+	background: #4a90e2;
 	}
 .header_area{
 	width:100%;
 	float:left;
 	position:relative;
-	padding:10px 15px;
+	/* padding:10px 15px; */
 	background:#4a90e2;
 	border-radius:0 0 4px 4px;
 	}
@@ -249,7 +250,8 @@ header{
 	padding-left:0;
 	}
 .header_right ul li{
-	width:auto;
+	width: 30px;
+	height: 30px;
 	position:relative;
 	list-style:none;
 	display:inline-block;
@@ -257,8 +259,15 @@ header{
 	margin-left:30px;
 	}
 .header_right ul li a{
-	width:100%;
-	float:left;
+
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 	}
 .header_right ul li a img{
 	width:100%;
@@ -845,11 +854,13 @@ header{
 }
 .tab button span{
 	background: #e72121;
-	color: #cccccc;
+	color: #ffffff;
 	border: none;
 	padding: 0px 5px;
 	position: relative;
 	float: right;
+	border-radius: 10px;
+	margin-left: 4px;
 }
 
 
@@ -1084,3 +1095,45 @@ header{
 	cursor: pointer;
 	float: right;
 }
+
+/* Balance area */
+.balance_are{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	padding: 40px 0;
+}
+.balance_are h3{
+	font-size: 18px;
+	color: #525252;
+	text-align: center;
+	margin: 20px 0;
+	font-weight: 200;
+}
+.balance_are span{
+	width: 150px;
+	height: 150px;
+	background: #4a90e2;
+	color: #ffffff;
+	border-radius: 100%;
+	text-align: center;
+	display: block;
+	font-size: 24px;
+	line-height: 145px;
+	margin: auto;
+}
+.balance_are button{
+	display: block;
+	margin: auto;
+	border: 1px solid #525252;
+	background: none;
+	color: #525252;
+	padding: 4px 10px;
+	margin-top: 20px;
+	margin-bottom: 20px; 
+	font-weight: 200;
+	cursor: pointer;
+}
+
+

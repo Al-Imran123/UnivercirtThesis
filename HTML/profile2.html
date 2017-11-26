@@ -19,8 +19,8 @@
                     <div class="header_right">
                         <ul>
                             <li><a href="#"><img src="image/profile1.png" alt="profile"></a></li>
-                            <li><a href="#"><img src="image/notification.png" alt="notification"></a></li>
-                            <li><a href="#"><img src="image/home.png" alt="home"></a></li>
+                            <li><a style="width:20px; height: 21px" href="#"><img src="image/notification.png" alt="notification"></a></li>
+                            <li><a style="width:22px; height: 19px" href="#"><img src="image/home.png" alt="home"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="tab">
                         <button class="tablink active" onclick="openCity(event,'Profile')">Profile</button>
                         <button class="tablink" onclick="openCity(event,'Portfolio')">Portfolio</button>
-                        <button class="tablink" onclick="openCity(event,'OrderRequest')">Order Request</button>
+                        <button class="tablink" onclick="openCity(event,'OrderRequest')">Order Request<span>10</span></button>
                         <button class="tablink " onclick="openCity(event,'Delivery')">Delivery</button>
                         <button class="tablink" onclick="openCity(event,'Hold')">Hold</button>
                         <button class="tablink" onclick="openCity(event,'Balance')">Balance</button>
@@ -173,20 +173,378 @@
                     </div>
 
                     <div id="OrderRequest" class="city" style="display:none">
-                        <h2>Tokyo</h2>
-                        <p>Tokyo is the capital of Japan.</p>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order1.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revision</td>
+                                            <td>:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time</td>
+                                            <td>:</td>
+                                            <td>1 Day</td>
+                                        </tr>
+                                    </table>
+                                    <div class="order_item_cont_button">
+                                        <button>Accept Request</button>
+                                        <button>Denied Request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order2.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revision</td>
+                                            <td>:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time</td>
+                                            <td>:</td>
+                                            <td>1 Day</td>
+                                        </tr>
+                                    </table>
+                                    <div class="order_item_cont_button">
+                                        <button>Accept Request</button>
+                                        <button>Denied Request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order3.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revision</td>
+                                            <td>:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time</td>
+                                            <td>:</td>
+                                            <td>1 Day</td>
+                                        </tr>
+                                    </table>
+                                    <div class="order_item_cont_button">
+                                        <button>Accept Request</button>
+                                        <button>Denied Request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="Delivery" class="city" style="display:none">
-                        <h2>Delivery</h2>
-                        <p>Tokyo is the capital of Japan.</p>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order1.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Earn</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                    </table>
+                                    <div class="client_feed">
+                                        <h2>Goald</h2>
+                                        <img src="image/goald.png" alt="profile">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order2.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revision</td>
+                                            <td>:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time</td>
+                                            <td>:</td>
+                                            <td>1 Day</td>
+                                        </tr>
+                                    </table>
+                                    <div class="client_feed">
+                                        <h2>Goald</h2>
+                                        <img src="image/goald.png" alt="profile">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order3.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Revision</td>
+                                            <td>:</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Time</td>
+                                            <td>:</td>
+                                            <td>1 Day</td>
+                                        </tr>
+                                    </table>
+                                    <div class="client_feed">
+                                        <h2>Goald</h2>
+                                        <img src="image/goald.png" alt="profile">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="Hold" class="city" style="display:none">
-                        <h2>Hold</h2>
-                        <p>Tokyo is the capital of Japan.</p>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order1.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>start date</td>
+                                            <td>:</td>
+                                            <td>12-11-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>End Date</td>
+                                            <td>:</td>
+                                            <td>12-18-2017</td>
+                                        </tr>
+                                    </table>
+                                    <div class="hold_item_cont_button">
+                                        <button class="active">Active</button>
+                                        <button class="delivery">Delivery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order2.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>start date</td>
+                                            <td>:</td>
+                                            <td>12-11-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>End Date</td>
+                                            <td>:</td>
+                                            <td>12-18-2017</td>
+                                        </tr>
+                                    </table>
+                                    <div class="hold_item_cont_button">
+                                        <button class="active">Active</button>
+                                        <button class="delivery">Delivery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_item">
+                            <div class="col-3-s ">
+                                <div class="order_item_img">
+                                    <img src="image/order3.png" alt="profile">
+                                </div>
+                            </div>
+                            <div class="col-7-s">
+                                <div class="order_item_cont">
+                                    <div class="order_item_cont_profile">
+                                        <img src="image/client.png" alt="profile">
+                                        <h2>Al Imran</h2>
+                                    </div>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                                    </p>
+                                    <table>
+                                        <tr>
+                                            <td>Budget</td>
+                                            <td>:</td>
+                                            <td>$4.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>start date</td>
+                                            <td>:</td>
+                                            <td>12-11-2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>End Date</td>
+                                            <td>:</td>
+                                            <td>12-18-2017</td>
+                                        </tr>
+                                    </table>
+                                    <div class="hold_item_cont_button">
+                                        <button class="active">Active</button>
+                                        <button class="delivery">Delivery</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="Balance" class="city" style="display:none">
-                        <h2>Balance</h2>
-                        <p>Tokyo is the capital of Japan.</p>
+                        <div class="balance_are">
+                            <div class="col-3-m">
+                                <h3>Current Balance</h3>
+                                <span>$4.00</span>
+                                <button>Transation</button>
+                            </div>
+                            <div class="col-3-m">
+                                <h3>Current Balance</h3>
+                                <span>$4.00</span>
+                            </div>
+                            <div class="col-3-m">
+                                <h3>Current Balance</h3>
+                                <span>$4.00</span>
+                                <h3>20-11-2017</h3>
+                            </div>
+                        </div>
                     </div>
         
                 </div>
