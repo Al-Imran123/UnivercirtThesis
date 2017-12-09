@@ -18,7 +18,18 @@
                 <div class="col-2-m">
                     <div class="header_right">
                         <ul>
-                            <li><a href="#"><img src="image/profile1.png" alt="profile"></a></li>
+                            <li class="dropdown">
+                                <div class="dropdown">
+                                    <button class="dropbtn" onclick="myFunction()">
+                                        <img src="image/profile1.png" alt="profile" style="margin-top: 2px;">
+                                    </button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                        <a href="#">My Info</a>
+                                        <a href="#">Log Out</a>
+                                        <a href="#">Support</a>
+                                    </div>
+                                </div> 
+                            </li>
                             <li><a style="width:20px; height: 21px" href="#"><img src="image/notification.png" alt="notification"></a></li>
                             <li><a style="width:22px; height: 19px" href="#"><img src="image/home.png" alt="home"></a></li>
                         </ul>
@@ -28,12 +39,15 @@
         </div>
     </header>
     
+
+
+
     <body>
         <div class="container">
             <div class="body_area">
                 <div class="col-3-s">
                     <div class="filter_title">
-                        <h3>select catagory</h3>
+                        <h3>Select catagory</h3>
                     </div>
                     <div class="filter_area">
                         <div class="category_area">
@@ -58,7 +72,7 @@
                             </ul>
                         </div>
                         <div class="category_area">
-                            <h3>web Design</h3>
+                            <h3>Web Design</h3>
                             <ul>
                                 <li>
                                     <input type="checkbox" value="logo"/>
@@ -79,7 +93,7 @@
                             <ul>
                                 <li>
                                     <input type="checkbox" value="logo"/>
-                                    <label>social App</label>
+                                    <label>Social App</label>
                                 </li>
                                 <li>
                                     <input type="checkbox" value="logo"/>
@@ -118,7 +132,7 @@
                 <div class="col-7-s">
                     <div class="search_area">
                         <button class="add_items"></button>
-                        <input class="search_text" type="search" placeholder="search Designer">
+                        <input class="search_text" type="search" placeholder="Search Designer">
                         <input class="search_submit" type="submit" value="">
                         <span class="saperator"></span>
                     </div>
@@ -137,8 +151,10 @@
                                 <h3>Gold</h3>
                             </div>
                             <div class="col-flex view_all">
-                                <input type="checkbox" value="vie_all">
-                                Vie All
+                                <span style="position: absolute; right: 4px">
+                                    <input type="checkbox" value="vie_all">
+                                    Vie All
+                                </span>
                             </div>
                         </div>
                         <div class="iteams_img">
@@ -160,8 +176,10 @@
                                 <h3>Gold</h3>
                             </div>
                             <div class="col-flex view_all">
-                                <input type="checkbox" value="vie_all">
-                                Vie All
+                                <span style="position: absolute; right: 4px">
+                                    <input type="checkbox" value="vie_all">
+                                    Vie All
+                                </span>
                             </div>
                         </div>
                         <div class="iteams_img">
@@ -173,5 +191,18 @@
         </div>
     </body>
 
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+    </script>
 </body>
 </html>

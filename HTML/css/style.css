@@ -273,6 +273,48 @@ header{
 	width:100%;
 	float:left;
 	}
+
+
+.dropdown {
+	float: left;
+	/* overflow: hidden; */
+}
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;    
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	right: 0;
+	top: 40px;
+	padding: 10px 0;
+}
+.dropdown-content a {
+	float: none;
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 10px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	position: relative !important;
+}
+.dropdown-content a:hover {
+	color: #4a90e2;
+}
+.show {
+	display: block;
+}
 	/* End Headder */
 
 .body_area{
@@ -308,6 +350,7 @@ header{
 	border: 1px solid #cecece;
 	border-radius: 4px;
 	padding: 8px 40px 8px 8px;
+	margin-top: 2px;
 }
 .search_submit{
 	width: 36px;
@@ -316,6 +359,7 @@ header{
 	position: absolute;
 	border:none;
 	right: 32px;
+	margin-top: 2px;
 }
 .saperator{
 	background: url(../image/searchsaperator.png) center center no-repeat;
@@ -323,7 +367,7 @@ header{
 	height: 22px;
 	position: absolute;
 	right: 72px;
-	top: 22px;
+	top: 24px;
 }
 
 /* Filter Area */
@@ -332,20 +376,24 @@ header{
 	height: auto;
 	float:left;
 	position: relative;
-	padding-right: 20px;
+	padding:20px 20px 0px 20px;
+	background: #ffffff;
+	border-radius: 4px 4px 0 0;
 }
 .filter_title h3{
 	font-size: 20px;
 	color: #525252;
 	font-weight: 500;
-	padding: 20px 0;
-	border-bottom: 1px solid #d3d3d3;
+	padding: 10px 10px 0 0 10px;
 }
 .filter_area{
 	width:100%;
 	height: auto;
 	float:left;
 	position: relative;
+	background: #ffffff;
+	border-radius: 0 0 4px 4px;
+	padding:10px 20px;
 }
 .category_area{
 	width:100%;
