@@ -1,5 +1,6 @@
 /* CSS Document */
  *{padding:0px; margin:0; box-sizing:border-box}
+ button, input, textarea{outline: none;}
 
  @font-face {
     font-family: 'HelveticaNeue';
@@ -259,8 +260,7 @@ header{
 	margin-left:30px;
 	}
 .header_right ul li a{
-
-	width: auto;
+	width: 100%;
 	height: auto;
 	position: absolute;
 	top: 0;
@@ -273,25 +273,46 @@ header{
 	width:100%;
 	float:left;
 	}
-
-
-.dropdown {
-	float: left;
-	/* overflow: hidden; */
-}
-.dropdown .dropbtn {
-	cursor: pointer;
-	font-size: 16px;    
+.header_right ul li .dropbtn {
+	width: 30px;
+	height: 30px;
 	border: none;
-	outline: none;
-	color: white;
-	background-color: inherit;
+	background: url(../image/profile1.png) center center no-repeat;
 }
+
+
+.header_right ul li a .info{
+	float: left;
+	position: relative;
+	width: 24px;
+	margin-right: 20px;
+	height: 24px;
+	background: url(../image/info.png) center center no-repeat;
+	}
+
+.header_right ul li a .logout{
+	float: left;
+	position: relative;
+	width: 24px;
+	margin-right: 20px;
+	height: 24px;
+	background: url(../image/logout.png) center center no-repeat;
+	}
+
+.header_right ul li a .support{
+	float: left;
+	position: relative;
+	width: 24px;
+	margin-right: 20px;
+	height: 24px;
+	background: url(../image/support.png) center center no-repeat;
+	}
+
 .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	min-width: 200px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 	right: 0;
@@ -300,6 +321,8 @@ header{
 }
 .dropdown-content a {
 	float: none;
+	float: left;
+	line-height: 26px;
 	color: black;
 	font-size: 14px;
 	font-weight: 300;
@@ -310,7 +333,7 @@ header{
 	position: relative !important;
 }
 .dropdown-content a:hover {
-	color: #4a90e2;
+	background: #f1f1f1;
 }
 .show {
 	display: block;
@@ -455,6 +478,7 @@ header{
 	position: relative;
 	border-radius: 10px;
 	overflow: hidden;
+	background: #f1f1f1;
 	}
 .iteams_img img{
     max-height: 100%;  
@@ -504,7 +528,7 @@ header{
 	position: relative;
 }
 .award img{
-	margin: 10px 0;
+	margin: 12px 0;
 }
 .award h3{
 	font-size: 14px;
@@ -779,7 +803,7 @@ header{
 	width:100%;
 	float: left;
 	position: relative;
-	padding: 40px;
+	padding: 20px 40px;
 }
 .add_form .text{
 	width:100%;
@@ -801,6 +825,7 @@ header{
 }
 .add_form textarea{
 	width:100%;
+	height: 100px;
 	float: left;
 	position: relative;
 	border: 1px solid #959595;
@@ -824,7 +849,7 @@ header{
 	background: rgb(241, 241, 241);
 	float: left;
 	position: relative;
-	margin-top: 30px;
+	margin: 20px 0;
 }
 .add_controler{
 	width:100%;
@@ -836,19 +861,22 @@ header{
 	display: none;
 }
 .add_controler label{
+	font-size: 14px;
 	float: right;
-	padding: 4px 10px;
+	padding: 4px 20px;
 	position: relative;
 	background: #4a90e2;
 	color: #ffffff;
+	border-radius: 4px;
 }
 .add_controler button{
 	float: left;
-	padding: 4px 10px;
+	padding: 4px 20px;
 	position: relative;
 	background: #4a90e2;
 	color: #ffffff;
 	border: none;
+	border-radius: 4px;
 }
 /* end  Add Item  */
 
@@ -876,8 +904,6 @@ header{
 	color: #4a90e2;
 	font-weight: 300;
 }
-
-
 .tab_cont_area{
 	width: 100%;
 	height: auto;
@@ -910,8 +936,6 @@ header{
 	border-radius: 10px;
 	margin-left: 4px;
 }
-
-
 .tab .active{
 	background: #4a90e2;
 	color: #ffffff;
@@ -982,6 +1006,32 @@ header{
 }
 
 /* end profile */
+
+.search_by_id{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.search_by_id input{
+	width: 240px;
+	height: auto;
+	padding: 6px;
+	border: 1px solid #a7a7a7;
+	border-right-color: #4a90e2;
+	float: left;
+	position: relative;
+}
+.search_by_id button{
+	width: auto;
+	height: auto;
+	padding: 7px 20px;
+	border: none;
+	background: #4a90e2;
+	color: #ffffff;
+	float: left;
+	position: relative;
+}
 /* start Portfolio */
 
 .profile_area{
@@ -1062,6 +1112,21 @@ header{
 	font-weight: 300;
 	float: left;
 }
+.order_item_cont h3{
+	font-size: 14px;
+	color: #525252;
+	font-weight: 600;
+	float: left;
+	margin-bottom: 16px;
+}
+.order_item_cont span{
+	font-size: 14px;
+	color: #4a90e2;
+	font-weight: 600;
+	float: left;
+	margin-bottom: 16px;
+	margin-left: 16px;
+}
 .order_item_cont table{
 	max-width: 100%;
 	height: auto;
@@ -1069,7 +1134,7 @@ header{
 	position: relative;
 	font-weight: 300;
 	font-size: 14px;
-	margin: 10px 0;
+	margin-top: 10px;
 }
 .order_item_cont_profile{
 	width: 100%;
@@ -1091,6 +1156,7 @@ header{
 	height: auto;
 	float: left;
 	position: relative;
+	margin-top: 16px;
 }
 .order_item_cont_button button{
 	background: #4a90e2;
@@ -1185,3 +1251,34 @@ header{
 }
 
 
+
+/*support*/
+.body_area_support{
+	width: 100%;
+	height: auto;
+	float: left;
+	background: #ffffff;
+	padding: 20px;
+	position: relative;
+	margin-top: 40px;
+	border-radius: 4px;
+}
+.body_area_support h3{
+	font-size: 16px;
+	color: #525252;
+	font-weight: 200;
+	margin-top: 20px;
+}
+.body_area_support h2{
+	font-size: 18px;
+	color: #525252;
+	font-weight: 200;
+	margin-top: 20px;
+}
+.body_area_support p{
+	font-size: 14px;
+	color: #525252;
+	font-weight: 200;
+	line-height: 20px;
+	margin-top: 20px;
+}

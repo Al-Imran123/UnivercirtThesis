@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -7,9 +7,9 @@
 </head>
 
 <body>
-	<header>
-		<div class="container">
-        	<div class="header_area">
+    <header>
+        <div class="container">
+            <div class="header_area">
                 <div class="col-2-m">
                     <div class="logo">
                         <a href="#"><img src="image/logo.png" alt="LOGO"></a>
@@ -18,7 +18,15 @@
                 <div class="col-2-m">
                     <div class="header_right">
                         <ul>
-                            <li><a href="#"><img src="image/profile1.png" alt="profile"></a></li>
+                            <li>
+                                <button class="dropbtn" onclick="myFunction()">
+                                </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#"><span class="info"></span>My Info</a>
+                                    <a href="#"><span class="logout"></span>Log Out</a>
+                                    <a href="#"><span class="support"></span>Support</a>
+                                </div>
+                            </li>
                             <li><a style="width:20px; height: 21px" href="#"><img src="image/notification.png" alt="notification"></a></li>
                             <li><a style="width:22px; height: 19px" href="#"><img src="image/home.png" alt="home"></a></li>
                         </ul>
@@ -177,16 +185,19 @@
         <div class="add_popup_cont">
             <h3>Add Item</h3>
             <div class="col-4-s">
-                <h3>Add Image</h3>
-                <div class="iteams_img">
-                    
+                <div class="add_controler">
+                    <h3>Add Image</h3>
+                    <div class="iteams_img_sample">
+                        
+                    </div>
+                    <button>Add</button>
+                    <label for="q">Add</label>
+                    <input id="q" type="file" value="Edit">
                 </div>
-                <button>Add</button>
-                <input type="file" value="Edit">
             </div>
             <div class="col-6-s">
                 <div class="add_form">
-                    <input class="text" type="text" placeholder="User Name">
+                    <input class="text" type="text" placeholder="Title">
                     <select>
                         <option>Catagory</option>
                         <option>Graphic Design</option>
@@ -200,12 +211,25 @@
                         <option>Business Design</option>
                     </select>
                     <textarea rows="3"></textarea>
+                    <input class="text" type="text" placeholder="Tag">
 
-                    <input class="submit" type="submit" value="Register">
+                    <input class="submit" type="submit" value="Add Items">
                 </div>
             </div>
         </div>
     </div>
-
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+          }
+        }
+    </script>
 </body>
 </html>
